@@ -40,7 +40,7 @@ function withdraw(accountIndex, amount) {
   console.log(`${account.name}'s new balance is ${account.balance}`);
 }
 
-//some example
+//some examples
 createyourAccount("Ntwali", 100);
 deposit(0, 50);
 withdraw(0, 25);
