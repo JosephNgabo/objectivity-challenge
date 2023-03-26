@@ -21,6 +21,11 @@ function deposit(accountIndex, amount) {
   console.log(`${account.name}'s new balance is ${account.balance}`);
 }
 
+function viewBalance(accountIndex) {
+    const account = accounts[accountIndex];
+    console.log(`${account.name}'s balance is ${account.balance}`);
+  }
+
 function withdraw(accountIndex, amount) {
   const account = accounts[accountIndex];
   if (amount < 0) {
@@ -35,12 +40,7 @@ function withdraw(accountIndex, amount) {
   console.log(`${account.name}'s new balance is ${account.balance}`);
 }
 
-function viewBalance(accountIndex) {
-  const account = accounts[accountIndex];
-  console.log(`${account.name}'s balance is ${account.balance}`);
-}
-
-// Example usage
+//some example
 createyourAccount("Ntwali", 100);
 deposit(0, 50);
 withdraw(0, 25);
